@@ -110,6 +110,43 @@
 		.zoom-effect:hover {
 			transform: scale(1.1);
 		}
+
+		::-webkit-scrollbar {
+			width: 10px;
+		}
+		::-webkit-scrollbar-track {
+			background: #f1f1f1;
+		}
+		::-webkit-scrollbar-thumb {
+			background: #888;
+		}
+		::-webkit-scrollbar-thumb:hover {
+			background: #555;
+		}
+	
+		/* Position the scrollbar at the bottom */
+		::-webkit-scrollbar-corner {
+			background: transparent; /* Hide the corner where vertical and horizontal scrollbars meet */
+		}
+		::-webkit-scrollbar-thumb:vertical {
+			height: 50px; /* Height of the scrollbar */
+			background-color: #888;
+		}
+		::-webkit-scrollbar-thumb:vertical:hover {
+			background-color: #555;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+			overflow-x: hidden; /* Hide horizontal scrollbar */
+			 /* Hide vertical scrollbar */
+		}
+	
+		.content {
+			/* Add some content height for demonstration */
+			height: 2000px;
+		}
 	</style>
 
 
